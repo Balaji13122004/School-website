@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balachandran School — Shaping Future Leaders</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <span>B</span><span>S</span>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo" onclick="smoothScroll('home')">
+        <div class="logo-icon">BS</div>
+        <span>Balachandran<br><small>School</small></span>
+      </a>
+      <nav id="main-nav">
+        <a href="#home" class="nav-link" data-section="home">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#director" class="nav-link" data-section="director">Director</a>
+        <a href="#admission" class="nav-link" data-section="admission">Admission</a>
+        <a href="#form" class="nav-link" data-section="form">Enquiry</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+        <a href="#admission" class="nav-cta" onclick="smoothScroll('admission')">Apply Now →</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#home" class="mobile-link" data-section="home">Home</a>
+    <a href="#about" class="mobile-link" data-section="about">About</a>
+    <a href="#director" class="mobile-link" data-section="director">Director</a>
+    <a href="#admission" class="mobile-link" data-section="admission">Admission</a>
+    <a href="#form" class="mobile-link" data-section="form">Enquiry</a>
+    <a href="#contact" class="mobile-link" data-section="contact">Contact</a>
+    <a href="#admission" class="mobile-cta" data-section="admission">Apply Now →</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1600&q=80" alt="School Campus" class="hero-img">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content reveal-hero">
+      <div class="hero-badge">Est. 2001 · Excellence in Education</div>
+      <h1 class="hero-title">
+        Balachandran<br>
+        <span class="hero-title-accent">School</span>
+      </h1>
+      <p class="hero-sub">Shaping Future Leaders with Excellence, Values & Innovation</p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="smoothScroll('admission')">Apply for 2026 →</button>
+        <button class="btn-outline" onclick="smoothScroll('about')">Explore School</button>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">2500+</span><span class="stat-label">Students</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">120+</span><span class="stat-label">Faculty</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">25</span><span class="stat-label">Years Legacy</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">98%</span><span class="stat-label">Pass Rate</span></div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <div class="scroll-dot"></div>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-tag reveal">About Us</div>
+      <div class="about-grid">
+        <div class="about-images reveal">
+          <div class="img-main">
+            <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?w=800&q=80" alt="School Building">
+          </div>
+          <div class="img-secondary">
+            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?w=400&q=80" alt="Students Learning">
+          </div>
+          <div class="about-badge-float">
+            <span class="badge-year">25+</span>
+            <span class="badge-text">Years of<br>Excellence</span>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <h2 class="section-title">Nurturing Minds,<br>Building Futures</h2>
+          <p class="about-desc">Balachandran School has been a cornerstone of academic excellence since 2001. We provide a holistic educational environment that blends rigorous academics with values-driven character development.</p>
+          <p class="about-desc">Our world-class faculty, modern infrastructure, and activity-based learning ensure every student reaches their fullest potential — academically, creatively, and as a responsible citizen.</p>
+          <div class="about-features">
+            <div class="feature"><div class="feature-icon">🎓</div><span>CBSE Affiliated</span></div>
+            <div class="feature"><div class="feature-icon">🔬</div><span>Smart Labs</span></div>
+            <div class="feature"><div class="feature-icon">⚽</div><span>Sports Campus</span></div>
+            <div class="feature"><div class="feature-icon">🎨</div><span>Arts & Culture</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIRECTOR -->
+  <section id="director" class="section director-section">
+    <div class="container">
+      <div class="section-tag reveal" style="--tag-color:#d4a843;">Director's Message</div>
+      <div class="director-grid">
+        <div class="director-card reveal">
+          <div class="director-img-wrap">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="School Director">
+            <div class="director-img-ring"></div>
+          </div>
+          <div class="director-name">Dr. R. Balachandran</div>
+          <div class="director-title">Founder & Director</div>
+          <div class="director-social">
+            <span>📧</span><span>🔗</span>
+          </div>
+        </div>
+        <div class="director-message reveal">
+          <div class="quote-mark">"</div>
+          <blockquote>
+            Education is not merely the transfer of knowledge — it is the kindling of a flame within each child. At Balachandran School, we believe every student carries limitless potential. Our mission is to provide the right environment, the right guidance, and the right values to help that potential shine brightly.
+            <br><br>
+            We are committed to building not just academically proficient students, but compassionate, courageous, and creative individuals ready to lead tomorrow's world.
+          </blockquote>
+          <div class="director-sig">
+            <div class="sig-line">Dr. R. Balachandran</div>
+            <div class="sig-role">Founder & Director, Balachandran School</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADMISSION CTA -->
+  <section id="admission" class="section admission-section">
+    <div class="admission-bg"></div>
+    <div class="container admission-content reveal">
+      <div class="admission-label">Admissions Open — 2026</div>
+      <h2 class="admission-title">Begin Your Child's<br>Journey to Excellence</h2>
+      <p class="admission-sub">Limited seats available. Secure your child's future at Balachandran School today.</p>
+      <div class="admission-actions">
+        <button class="btn-primary btn-large" onclick="smoothScroll('form')">Apply Now — Free →</button>
+        <div class="admission-note">📞 Call us: <strong>9876543210</strong></div>
+      </div>
+      <div class="admission-classes">
+        <span>LKG</span><span>UKG</span><span>Grade I–V</span><span>Grade VI–X</span><span>Grade XI–XII</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENQUIRY FORM -->
+  <section id="form" class="section form-section">
+    <div class="container">
+      <div class="section-tag reveal">Enquiry</div>
+      <div class="form-grid">
+        <div class="form-info reveal">
+          <h2 class="section-title">We'd Love to<br>Hear from You</h2>
+          <p>Fill in your details and our admissions team will reach out within 24 hours.</p>
+          <ul class="form-benefits">
+            <li>✔ Free School Tour Available</li>
+            <li>✔ Speak with Our Faculty</li>
+            <li>✔ Get Admission Brochure</li>
+            <li>✔ Fee Structure Details</li>
+          </ul>
+        </div>
+        <div class="form-card reveal">
+          <form id="formData" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Parent / Guardian Name" required>
+              <span class="error-msg" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="mobile">Mobile Number</label>
+              <input type="tel" id="mobile" name="mobile" placeholder="+91 98765 43210" required maxlength="10">
+              <span class="error-msg" id="mobile-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="classname">Class Applying For</label>
+              <select id="classname" name="classname" required>
+                <option value="" disabled selected>Select Class</option>
+                <option>LKG</option>
+                <option>UKG</option>
+                <option>Grade I</option>
+                <option>Grade II</option>
+                <option>Grade III</option>
+                <option>Grade IV</option>
+                <option>Grade V</option>
+                <option>Grade VI</option>
+                <option>Grade VII</option>
+                <option>Grade VIII</option>
+                <option>Grade IX</option>
+                <option>Grade X</option>
+                <option>Grade XI (Science)</option>
+                <option>Grade XI (Commerce)</option>
+                <option>Grade XII (Science)</option>
+                <option>Grade XII (Commerce)</option>
+              </select>
+              <span class="error-msg" id="class-error"></span>
+            </div>
+            <button type="submit" class="btn-submit" id="submit-btn">
+              <span id="btn-text">Submit Enquiry →</span>
+              <span id="btn-loader" style="display:none;">Sending...</span>
+            </button>
+          </form>
+          <div class="success-msg" id="success-msg">
+            <div class="success-icon">✓</div>
+            <h3>Enquiry Received!</h3>
+            <p>Our admissions team will call you within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-tag reveal">Contact & Location</div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h2 class="section-title">Find Us</h2>
+          <div class="contact-cards">
+            <div class="contact-card">
+              <div class="contact-icon">📍</div>
+              <div>
+                <strong>Address</strong>
+                <p>123 School Road, Gandhi Nagar,<br>Kurnool, Andhra Pradesh — 518 001</p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">📞</div>
+              <div>
+                <strong>Phone</strong>
+                <p><a href="tel:9876543210">9876543210</a><br><a href="tel:9876543211">9876543211</a></p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">📧</div>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:info@balachandranschool.edu.in">info@balachandranschool.edu.in</a></p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">🕐</div>
+              <div>
+                <strong>Office Hours</strong>
+                <p>Mon–Sat: 8:00 AM – 4:00 PM<br>Sun: Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map-wrap reveal">
+          <iframe
+            src="https://maps.google.com/maps?q=Kurnool,Andhra+Pradesh&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            allowfullscreen
+            loading="lazy"
+            title="School Location Map">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">BS</div>
+        <div>
+          <strong>Balachandran School</strong><br>
+          <small>Shaping Future Leaders Since 2001</small>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#home" onclick="smoothScroll('home')">Home</a>
+        <a href="#about" onclick="smoothScroll('about')">About</a>
+        <a href="#admission" onclick="smoothScroll('admission')">Admissions</a>
+        <a href="#contact" onclick="smoothScroll('contact')">Contact</a>
+      </div>
+      <div class="footer-copy">© 2026 Balachandran School. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-top" id="back-top" aria-label="Back to top" onclick="smoothScroll('home')">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
